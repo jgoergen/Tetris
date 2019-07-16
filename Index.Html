@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Tetris!</title>
+
+        <script src="./JS/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" href="./CSS/site.css">
+    </head>
+
+    <body>
+        <canvas id="canvas" width="240" height="330"></canvas>
+    </body>
+    
+    <script src="./JS/Utilities.js"></script>
+    <script src="./JS/Block.js"></script>
+    <script src="./JS/Piece.js"></script>
+    <script src="./JS/Map.js"></script>
+    <script src="./JS/Tetris.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var tetris = new Tetris("canvas", 0, 0, 300, 10, 10, 16);
+        });
+
+    </script>
+</html>
